@@ -19,11 +19,11 @@ Let's take 3524 as an example:
 
 **Step	Descending Order	Ascending Order	 Subtraction	Result**
 
-  1	         5432	             2345	       5432 - 2345	3087
+  1__________5432____________2345__________5432 - 2345___3087
 
-  2	         8730	             0378	       8730 - 378	  8352
+  2__________8730____________0378__________8730 - 378____8352
 
-  3	         8532	             2358	       8532 - 2358	6174 🎉
+  3__________8532____________2358__________8532 - 2358___6174 🎉
 
 Once we reach 6174, repeating the process will always return 6174, so the process stops.
 
@@ -31,3 +31,45 @@ Once we reach 6174, repeating the process will always return 6174, so the proces
 
 Any four-digit number (except repdigits like 1111, 2222, etc.) will reach 6174 in at most 7 steps.
 If a number has less than 4 digits, leading zeros are added to make it four-digit (e.g., 0789 → 0789).
+
+# Collatz Conjecture 🚀
+
+The Collatz Conjecture (also called the 3x + 1 problem) is an unsolved problem in mathematics proposed by Lothar Collatz in 1937. It describes a sequence of numbers that always eventually reaches 1, no matter which positive integer you start with.
+
+Collatz Conjecture Process 🔢
+
+Start with any positive integer n.
+
+If n is even, divide it by 2 → n = n / 2.
+
+If n is odd, multiply it by 3 and add 1 → n = 3n + 1.
+
+Repeat the process with the new value of n.
+
+The sequence always reaches 1, though no one has been able to prove it for all numbers.
+
+**Example:** Collatz Sequence for n = 12
+
+Let's take 12 as an example:
+
+Step	n(Current Value)	 Operation
+1__________12__________	Even → 12 / 2 = 6
+2__________6___________	Even → 6 / 2 = 3
+3__________3___________	Odd → 3 × 3 + 1 = 10
+4__________10__________	Even → 10 / 2 = 5
+5__________5___________	Odd → 5 × 3 + 1 = 16
+6__________16__________	Even → 16 / 2 = 8
+7__________8____________Even → 8 / 2 = 4
+8__________4____________Even → 4 / 2 = 2
+9__________2____________Even → 2 / 2 = 1 🎉
+
+After 9 steps, we reach 1.
+
+**Collatz Conjecture Properties**
+
+No matter which number you start with, the sequence always seems to reach 1.
+
+Some numbers take longer to reach 1 than others.
+
+No mathematical proof exists that it works for all numbers, making it an open problem in mathematics.
+
