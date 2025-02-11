@@ -17,7 +17,7 @@ You will always reach 6174 in at most 7 iterations.
 **Example:** Applying Kaprekar’s Process
 Let's take 3524 as an example:
 
-**Step	Descending Order	Ascending Order	 Subtraction	Result**
+**Step__Descending Order__Ascending Order__Subtraction__Result**
 
   1__________5432____________2345__________5432 - 2345___3087
 
@@ -52,7 +52,8 @@ The sequence always reaches 1, though no one has been able to prove it for all n
 
 Let's take 12 as an example:
 
-Step	n(Current Value)	 Operation
+**Step___n(Current Value)___Operation**
+
 1__________12__________	Even → 12 / 2 = 6
 
 2__________6___________	Even → 6 / 2 = 3
